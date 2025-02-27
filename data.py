@@ -37,3 +37,8 @@ class CountyDemographics:
                 self.population,
                 self.state
             )
+
+    def __eq__(self, other):
+        if self.county == other.county:
+            return True
+        return False
